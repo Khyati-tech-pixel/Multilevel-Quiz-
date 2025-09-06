@@ -1,0 +1,69 @@
+body {
+    display: flex;              /*Page content ko horizontally aur vertically center align karne ke liye Flexbox ka use.*/
+    justify-content: center;    /*Content ko horizontally center align karta hai.*/              
+    align-items: center;        /*Content ko vertically center karta hai.*/
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: lightblue;
+  }
+  
+  .quiz-container {
+    width: 400px;
+    background: #fff;
+    padding: 20px;                              /*Andar ka content border se 20px ka distance rakhega*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);/*Box ke neeche shadow effect.*/
+    border-radius: 10px;                        /*Corners rounded ho jate hain*/
+  }
+  
+  h2 {
+    margin-bottom: 20px;           /*Heading aur next element ke beech me space banata hai.*/
+              
+  }
+  
+  .options {
+    display: flex;           /*Flexbox layout use karta hai*/
+    flex-direction: column;   /*Options vertically stacked honge.*/
+    gap: 10px;
+  }
+  
+  .option {
+    padding: 10px;
+    background: #2ccefb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .option:hover {
+    background: #2ccefb;
+  }
+  
+  .option.correct {
+    background: green;
+  }
+  
+  .option.incorrect {
+    background: #ce1b1b;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
